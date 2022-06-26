@@ -1,5 +1,7 @@
 // Run code with g++ compiler
 // g++ -o test.exe test.cpp
+// or 
+// online-ide (https://www.online-ide.com/BCoF6NKdjX)
 
 #include <iostream>
 using namespace std;
