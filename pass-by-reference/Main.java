@@ -1,4 +1,3 @@
-// Note: Java is Strictly Pass by Value!
 // Run code with JAVA
 // javac Main.java
 // java Main

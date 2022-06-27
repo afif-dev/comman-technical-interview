@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+
+	<title>Fizz Buzz Interview!</title>
+
+	<!-- CSS -->
+	<style>
+	</style>
+
+</head>
+
+<body>
+	<!-- Site Content -->
+	<h3>Fizz Buzz Interview Question</h3>
+	<p>Print the integers from 1 to 100 (inclusive)<br />
+		But:<br />
+		- for multiple of three, print Fizz (instead of the number).<br />
+		- for multiple of five, print Buzz (instead of the number).<br />
+		- for multiple of both three and five, print FizzBuzz (instead of the number).<br />
+	</p>
+	<hr />
+	<div class="main"></div>
+	<!-- Scripts / JS -->
+	<script>
+		const mainEl = document.querySelector(".main");
+
+		for (let i = 1; i <= 100; i++) {
+			// if (i % 3 == 0 && i % 5 == 0) {
+			if (i % 15 == 0) {
+				console.log("Fizz Buzz");
+				mainEl.innerHTML += "FizzBuzz <br/>";
+			}
+			else if (i % 3 == 0) {
+				console.log("Fizz");
+				mainEl.innerHTML += "Fizz <br/>";
+			}
+			else if (i % 5 == 0) {
+				console.log("Buzz");
+				mainEl.innerHTML += "Buzz <br/>";
+			}
+			else {
+				console.log(i);
+				mainEl.innerHTML += i + " <br/>";
+			}
+		}
+	</script>
+
+</body>
+
+</html>
