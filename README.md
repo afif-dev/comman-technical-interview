@@ -20,7 +20,7 @@ Print the integers from 1 to 100 (inclusive)
   - for multiple of both three and five, print FizzBuzz (instead of the number).
 ```
 
-## Next step?
+## Next steps?
 
 1. Find job. 🕵️‍♂️
    - https://www.linkedin.com/jobs/
