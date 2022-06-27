@@ -1,54 +1,58 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
 
-    <title>Xmas Tree</title>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
 
-  </head>
-  <body>
-  <!-- Site Content -->
+	<title>Xmas Tree</title>
+
+</head>
+
+<body>
+	<!-- Site Content -->
+	<h1>Xmas Tree</h1>
 	<form id="xmas">
-		<input class="totalRow" type="number" value="5" name="total_row">
+		<input class="totalRow" type="number" value="18" name="total_row">
 	</form>
 	<div id="content"></div>
-  <!-- Scripts / JS -->
-  <script>
-	/*
-	// camelCase PascalCase snake_case kebab-case
-	*/
-	let totalInput = document.querySelector("form#xmas .totalRow");
-	xmasTreeFn();
-	totalInput.addEventListener("change", xmasTreeFn);
-	
-	function xmasTreeFn(){
-		let xmasTree="", row, space, star, totalRow;
-		totalRow = totalInput.value;
-		if(totalRow  <= 0){
-			document.getElementById("content").innerHTML = "";
+	<!-- Scripts / JS -->
+	<script>
+		/*
+		// camelCase PascalCase snake_case kebab-case
+		*/
+		let totalInput = document.querySelector("form#xmas .totalRow");
+		xmasTreeFn();
+		totalInput.addEventListener("change", xmasTreeFn);
+
+		function xmasTreeFn() {
+			let xmasTree = "", row, space, star, totalRow;
+			totalRow = totalInput.value;
+			if (totalRow <= 0) {
+				document.getElementById("content").innerHTML = "";
+				return;
+			}
+			for (row = 1; row <= totalRow; row++) {
+				//console.log(row);
+				for (space = 1; space <= (totalRow - row); space++) {
+					xmasTree += "_";
+				}
+				for (star = 1; star <= ((row * 2) - 1); star++) {
+					xmasTree += "$";
+				}
+				//console.log(xmasTree);
+				xmasTree += "<br/>";
+			}
+			document.getElementById("content").innerHTML = xmasTree;
 			return;
 		}
-		for(row=1; row <= totalRow; row++){
-			//console.log(row);
-			for(space=1; space <= (totalRow - row); space++){
-				xmasTree += "_";
-			}
-			for(star=1; star <= ((row * 2) - 1); star++){
-				xmasTree += "$";
-			}
-			//console.log(xmasTree);
-			xmasTree += "<br/>";
-		}
-		document.getElementById("content").innerHTML = xmasTree;
-		return;
-	}
-	
-	console.log('%cEnjoy xmas tree! 🌲 🎅🖕', 'color: red; font-size: 30px; background-color:white; padding:30px');
-	console.log('%ckeep coding until the end!', 'color: black; font-size: 10px; background-color:white; padding:15px 30px');
-  </script>
-  </body>
+
+		console.log('%cEnjoy xmas tree! 🌲 🎅', 'color: red; font-size: 30px; background-color:white; padding:30px');
+		console.log('%ckeep coding until the end! 🤓💻 (nerd!)', 'color: black; font-size: 10px; background-color:white; padding:15px 30px');
+	</script>
+</body>
+
 </html>

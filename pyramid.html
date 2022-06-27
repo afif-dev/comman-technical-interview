@@ -1,37 +1,40 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
 
-    <title>Pyramid Basic</title>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
 
-  </head>
-  <body>
-  <!-- Site Content -->
+	<title>Pyramid Basic</title>
+
+</head>
+
+<body>
+	<!-- Site Content -->
 	<div id="content"></div>
-  <!-- Scripts / JS -->
-  <script>
-	var star = "", pyramid = "", py = 1, py1, py2;
-	
-	for(py1 = 0; py1 < 4; py1++ ){
-		for(py2 = 0; py2 <= py1; py2++ ){
-			star += '*';
-			pyramid += py + " ";
-			console.log(py);
+	<!-- Scripts / JS -->
+	<script>
+		var star = "", pyramid = "", py = 1, py1, py2;
 
-			py++;
+		for (py1 = 0; py1 < 4; py1++) {
+			for (py2 = 0; py2 <= py1; py2++) {
+				star += '*';
+				pyramid += py + " ";
+				console.log(py);
+
+				py++;
+			}
+			star += "\n";
+			pyramid += "<br/>";
+			console.log(' --- ');
 		}
-		star += "\n";
-		pyramid += "<br/>";
-		console.log(' --- ');
-	}
-	console.log(star);
-	
-	document.getElementById("content").innerHTML = pyramid;
-  </script>
-  </body>
+		console.log(star);
+
+		document.getElementById("content").innerHTML = pyramid;
+	</script>
+</body>
+
 </html>
