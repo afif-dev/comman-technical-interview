@@ -1,4 +1,4 @@
-# Comman Technical Interview Test
+# Common Technical Interview Test
 
 Same code every time 🤓💻
 
