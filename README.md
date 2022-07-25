@@ -20,6 +20,29 @@ Print the integers from 1 to 100 (inclusive)
   - for multiple of both three and five, print FizzBuzz (instead of the number).
 ```
 
+4. The primary or most commonly-used HTTP methods for CRUD
+  - GET (read)
+  - POST (create)
+  - PUT (update)
+  - DELETE (delete)
+  - PATCH (update/replace)
+
+5. What is Object-Oriented Programming (OOP)
+  - Object-oriented programming is about creating objects that contain both data and functions.
+  
+6. The basic principles of Object-Oriented Programming (OOP)
+  - Abstraction
+  - Encapsulation
+  - Inheritance
+  - Polymorphism
+
+7. Object-Oriented Programming (OOP) advantages
+  - OOP is faster and easier to execute.
+  - OOP provides a clear structure for the programs.
+  - OOP helps to keep the code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug.
+  - OOP makes it possible to create full reusable applications with less code and shorter development time.
+
+
 ## Next steps?
 
 1. Find job. 🕵️‍♂️
